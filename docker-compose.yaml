@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  mysql:
+    image: yuri1987/mysql
+    container_name: mysql
+    volumes:
+    - /path/to/data:/var/lib/mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=x
+    - MYSQL_USER=x
+    - MYSQL_PASSWORD=x
+    ports:
+    - "3306:3306"
